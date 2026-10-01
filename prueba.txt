@@ -1,0 +1,41 @@
+// Prueba general del analizador lexico
+
+var contador = 10;
+const limite = 20;
+float promedio = 15.5;
+char letra = 'A';
+
+def mostrar {
+    print("Valor del contador");
+    print(contador);
+}
+
+/* Prueba de estructuras de control */
+if (contador < limite) {
+    contador += 1;
+} else {
+    contador--;
+}
+
+while (contador > 0) {
+    contador = contador - 1;
+}
+
+for (contador = 0; contador < limite; contador++) {
+    print(contador);
+}
+
+foreach contador {
+    print(contador);
+}
+
+/* Operadores a nivel de bits */
+contador = contador << 2;
+contador = contador >> 1;
+contador = contador & limite;
+contador = contador | limite;
+contador = contador ^ limite;
+contador = ~contador;
+
+/* Caracter no reconocido para probar TOK_ERROR */
+@
